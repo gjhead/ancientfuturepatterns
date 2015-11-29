@@ -1,0 +1,247 @@
+/* Import Base Styles */
+/*-------------------------------------------
+   	Global Starter
+-------------------------------------------*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, menu, nav, section, main, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary, audio, canvas, progress, video {
+  display: block; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Nice Subs & Sups */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+  display: block;
+  max-width: 100%;
+  height: auto; }
+  a img {
+    border: none; }
+
+pre {
+  overflow: auto; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0;
+  vertical-align: top; }
+
+::-moz-selection {
+  background: #d7d7d7;
+  color: #000;
+  text-shadow: none; }
+
+::selection {
+  background: #d7d7d7;
+  color: #000;
+  text-shadow: none; }
+
+/* Color Variables */
+/* Font Sizes */
+/* font familes */
+/* Site Specific General Styles */
+body {
+  background: #000000;
+  color: #ffffff; }
+
+i, em {
+  font-style: italic; }
+
+h1 {
+  font-family: "proxima-nova",sans-serif;
+  font-size: 72px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: .85em; }
+  @media screen and (min-width: 550px) {
+    h1 {
+      font-size: 102px; } }
+
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 21px;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+/* Custom CSS */
+/* Pull in what's needed, create stuff */
+.af {
+  margin: 15px auto;
+  width: 95%; }
+
+.headerSite {
+  margin: 40px 0; }
+  .headerSite .subhead {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    font-size: 21px;
+    font-weight: normal;
+    text-transform: uppercase; }
+
+.footerSite {
+  text-align: center; }
+  .footerSite p.email {
+    margin-bottom: 45px; }
+    .footerSite p.email a {
+      font-family: "Courier New", Courier, monospace;
+      color: #ffffff;
+      font-size: 14px;
+      text-decoration: none;
+      text-transform: uppercase; }
+  .footerSite p.pitt {
+    font-family: "proxima-nova",sans-serif;
+    text-transform: uppercase;
+    font-size: 12px; }
+
+.subForm form {
+  display: block;
+  width: 300px;
+  margin: 35px auto; }
+.subForm input[type="email"],
+.subForm button {
+  opacity: 1;
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: none; }
+.subForm input[type="email"] {
+  width: 150px;
+  font-size: 14px;
+  padding: 0 5px;
+  height: 30px;
+  margin: 0 10px 0 0;
+  float: left;
+  font-family: "Courier New", Courier, monospace; }
+.subForm button {
+  font-size: 14px;
+  height: 30px;
+  font-family: "proxima-nova",sans-serif;
+  background: #ffffff;
+  text-transform: uppercase;
+  width: 120px;
+  margin: 0;
+  display: inline-block;
+  float: right;
+  transition: all 0.5s ease;
+  cursor: pointer; }
+  .subForm button:hover {
+    background: grey;
+    color: #ffffff; }
+
+/* Closing Styles */
+/* Additional Styles & Helpers Last */
+.center {
+  text-align: center; }
+
+/* Contain floats: h5bp.com/q */
+.group:before, .group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  *zoom: 1; }
+
+/* For IE 6/7 (trigger hasLayout) can remove this soon */
+/* Hide for both screenreaders and browsers */
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: */
+.vh {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+  .vh.focusable:active, .vh.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+  visibility: hidden; }
+
+/* for image replacement */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -123456em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  *line-height: 0; }
+
+/* Stand for No Text */
+.nt {
+  display: block;
+  border: 0;
+  text-indent: -123456em;
+  overflow: hidden;
+  text-align: left;
+  direction: ltr;
+  *line-height: 0; }
+
+/*# sourceMappingURL=screen-pre.css.map */

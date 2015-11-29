@@ -1,0 +1,52 @@
+.subForm {
+	
+	form {
+		display: block;
+		width: 300px;
+		margin: 35px auto;  
+	}
+	
+	input[type="email"],
+	button {  
+		opacity: 1;
+		border:0;
+		border-radius: 0;	
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		-o-appearance: none;
+		appearance: none;
+		outline: none
+	}
+	
+	input[type="email"] {
+		width: 150px;
+		font-size: 14px;
+		padding: 0 5px;
+		height: 30px;
+		margin: 0 10px 0 0;
+		float: left;
+		font-family: "Courier New", Courier, monospace;
+	}
+	
+	button {
+		font-size: 14px;
+		height: 30px;
+		font-family: "proxima-nova",sans-serif;
+		background: #ffffff;
+		text-transform: uppercase;
+		width: 120px;
+		margin:0;
+		display: inline-block;
+		float: right;
+		transition: all 0.5s ease;
+		cursor: pointer; 
+		
+		&:hover {
+			background: grey;
+			color: #ffffff;
+		}
+	
+	}	
+	
+}

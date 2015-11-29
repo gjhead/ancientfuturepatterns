@@ -1,0 +1,102 @@
+/* Color Variables */
+
+$black: 			#000000;
+$white: 			#ffffff;
+
+// GENERAL Breakpoint Variables
+
+// IN general, these are the main breakpoints. But, there are a few custom ones throughout when needed.
+
+// Going Up -->
+// Min Widths
+
+$mid: 		600px;  // Made for fine tuning some mobile styles a bit.
+$medium:  	768px; // min-width
+$large:   	1200px; // min-width
+
+  
+/* Font Sizes */
+// Not really using these at all.
+
+$base: 16px;
+$base-font-size: 16px;
+
+/* font familes */
+$adelle: "adelle", Georgia, Arial, sans-serif;
+$tabletgothic: "tablet-gothic", Arial, sans-serif;
+$tabletgothiccomp: "tablet-gothic-compressed", Arial, sans-serif; 
+
+
+/* Site Specific General Styles */
+
+
+body { 
+	background: #000000;
+	color: #ffffff;
+}
+
+b, strong{
+}
+
+i, em {
+	font-style: italic;
+}
+
+p {
+}
+
+ul, dl, ol { 
+}
+
+li {
+}
+
+
+
+a {
+	&:hover,
+	&:active,
+	&:focus {
+
+	}
+}
+
+h1 {
+	font-family: "proxima-nova",sans-serif;
+	font-size: 72px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: .85em;
+	
+	@media screen and (min-width: 550px) { 
+		font-size: 102px;
+	}
+}
+
+h2 {
+	font-family: "Courier New", Courier, monospace;
+	text-align: center;
+	font-size: 21px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+h3 {
+}
+
+h4 {   
+}
+
+h5 {  
+}
+
+ul, ol {  
+	  
+  li {
+  }
+  
+}
+
+blockquote {
+  
+}
