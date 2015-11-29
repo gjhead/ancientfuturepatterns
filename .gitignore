@@ -1,0 +1,42 @@
+.DS_Store
+latest-change.txt
+Thumbs.db
+
+# just a little crazy about sass cache.  this def takes care of ALL OF IT
+.scssc
+*.scssc
+.sass-cache
+*.sass-cache/
+**/.sass-cache
+**/.sass-cache/*
+
+
+# Pattern Lab stuff to not Push
+config/*
+core/*
+extras/*
+public/*
+
+config.ini
+
+
+
+
+
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
+*.sassc
+*.scssc
+.cache
+node_modules/*
+
+
