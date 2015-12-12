@@ -14,8 +14,6 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, menu, nav, section, main, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
   border: 0;
   outline: 0;
   font-size: 100%;
@@ -85,29 +83,102 @@ th {
 /* Font Sizes */
 /* font familes */
 /* Site Specific General Styles */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
 body {
   background: #000000;
-  color: #ffffff; }
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px; }
 
 i, em {
   font-style: italic; }
 
-h1 {
+p {
+  line-height: 1.2em;
+  margin: 0 0 1em; }
+
+ul, dl, ol {
+  margin: 0 0 1em; }
+
+ul ul,
+ol ol {
+  margin: 1em 0 1.5em;
+  font-size: .9em; }
+
+li {
+  line-height: 1.2em;
+  margin: 0 0 .75em; }
+
+dl dt {
+  margin: 1.2em 0 1em; }
+  dl dt:first-child {
+    margin-top: 0; }
+dl dd {
+  line-height: 1.2em; }
+
+h1,
+h1.af {
   font-family: "proxima-nova",sans-serif;
   font-size: 72px;
   text-transform: uppercase;
   text-align: center;
   line-height: .85em; }
   @media screen and (min-width: 550px) {
-    h1 {
+    h1,
+    h1.af {
       font-size: 102px; } }
 
 h2 {
   font-family: "Courier New", Courier, monospace;
-  text-align: center;
+  font-size: 27px;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+h3 {
+  font-family: "Courier New", Courier, monospace;
   font-size: 21px;
   font-weight: normal;
   text-transform: uppercase; }
+
+h4 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+h5 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+h6 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+.animate-fade {
+  transition: opacity 0.5s ease-out; }
+
+.animate-fade:hover {
+  opacity: 0; }
+
+.animate-move > .demo-shape, .button, .buttonB {
+  transition: all 0.5s ease-in-out; }
+
+h1,
+h1.af, .button, .buttonB {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.font-secondary {
+  font-family: "proxima-nova", sans-serif; }
 
 /* Custom CSS */
 /* Pull in what's needed, create stuff */
@@ -138,6 +209,89 @@ h2 {
     font-family: "proxima-nova",sans-serif;
     text-transform: uppercase;
     font-size: 12px; }
+
+form ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0; }
+  form ul li {
+    padding-left: 0;
+    margin-left: 0; }
+
+.input-text, textarea, select, .button, .buttonB {
+  opacity: 1;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none; }
+
+fieldset {
+  display: block; }
+  fieldset label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 5px; }
+
+.input-text {
+  font-size: 14px;
+  padding: 0 5px;
+  height: 30px;
+  margin: 0 0 10px;
+  font-family: "Courier New", Courier, monospace; }
+  .input-text.error {
+    border: 1px solid red; }
+
+textarea {
+  font-size: 14px;
+  padding: 10px;
+  margin: 0 0 10px;
+  font-family: "Courier New", Courier, monospace; }
+
+abbr[title="Required"] {
+  color: red; }
+
+select {
+  font-size: 14px;
+  padding: 0 20px 0 5px;
+  height: 30px;
+  margin: 0 0 10px;
+  font-family: "Courier New", Courier, monospace;
+  background: #ffffff url(../../../assets/chevron-down.svg) right 5px center no-repeat;
+  background-size: 20px; }
+
+.button {
+  font-size: 14px;
+  font-family: "proxima-nova", sans-serif;
+  color: #000000;
+  background: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+  padding: 10px 20px; }
+  .button:hover, .button:focus {
+    background: grey;
+    color: #ffffff; }
+
+.buttonB {
+  font-size: 12px;
+  font-family: "proxima-nova", sans-serif;
+  color: #000000;
+  background: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+  padding: 5px 10px; }
+  .buttonB:hover, .buttonB:focus {
+    background: grey;
+    color: #ffffff; }
 
 .subForm form {
   display: block;
