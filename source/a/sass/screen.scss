@@ -1,6 +1,8 @@
 /* Import Base Styles */
 @import "reset";
-@import "mixins";
+@import "extends";
+
+
 @import "general";
 
 
@@ -21,5 +23,3 @@
 
 
 
-/* Closing Styles */
-@import "helpers";

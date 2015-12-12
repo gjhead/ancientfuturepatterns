@@ -79,6 +79,32 @@ th {
   color: #000;
   text-shadow: none; }
 
+/* Contain floats: h5bp.com/q */
+.group:before, .group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+h1,
+h1.af, .button, .buttonB {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* Hide only visually, but have it available for screenreaders: */
+/* Hide visually and from screenreaders, but maintain layout */
+/* for image replacement */
+/* Hide for both screenreaders and browsers */
+.animate-fade {
+  transition: opacity 0.5s ease-out; }
+
+.animate-fade:hover {
+  opacity: 0; }
+
+.animate-move > .demo-shape, .button, .buttonB {
+  transition: all 0.5s ease-in-out; }
+
 /* Color Variables */
 /* Font Sizes */
 /* font familes */
@@ -331,71 +357,5 @@ select {
   .subForm button:hover {
     background: grey;
     color: #ffffff; }
-
-/* Closing Styles */
-/* Additional Styles & Helpers Last */
-.center {
-  text-align: center; }
-
-/* Contain floats: h5bp.com/q */
-.group:before, .group:after {
-  content: "";
-  display: table; }
-
-.group:after {
-  clear: both; }
-
-.group {
-  *zoom: 1; }
-
-/* For IE 6/7 (trigger hasLayout) can remove this soon */
-/* Hide for both screenreaders and browsers */
-.hidden {
-  display: none;
-  visibility: hidden; }
-
-/* Hide only visually, but have it available for screenreaders: */
-.vh {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
-  .vh.focusable:active, .vh.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto; }
-
-/* Hide visually and from screenreaders, but maintain layout */
-.invisible {
-  visibility: hidden; }
-
-/* for image replacement */
-.ir {
-  display: block;
-  border: 0;
-  text-indent: -123456em;
-  overflow: hidden;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  text-align: left;
-  direction: ltr;
-  *line-height: 0; }
-
-/* Stand for No Text */
-.nt {
-  display: block;
-  border: 0;
-  text-indent: -123456em;
-  overflow: hidden;
-  text-align: left;
-  direction: ltr;
-  *line-height: 0; }
 
 /*# sourceMappingURL=style.css.map */
