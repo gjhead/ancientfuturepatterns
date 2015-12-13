@@ -79,7 +79,7 @@ samp {
   clear: both; }
 
 h1,
-h1.af, table th, .mainNav a, .button, .buttonB {
+h1.af, table th, .mainNav a, p.pitt, .button, .buttonB {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -273,20 +273,24 @@ table {
   .mainNav a {
     padding: 10px 20px; } }
 
-.footerSite {
+.afFooter {
   text-align: center; }
-  .footerSite p.email {
-    margin-bottom: 45px; }
-    .footerSite p.email a {
-      font-family: "Courier New", Courier, monospace;
-      color: #ffffff;
-      font-size: 14px;
-      text-decoration: none;
-      text-transform: uppercase; }
-  .footerSite p.pitt {
-    font-family: "proxima-nova",sans-serif;
+
+p.email {
+  margin-bottom: 45px; }
+  p.email a {
+    font-family: "Courier New", Courier, monospace;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
     text-transform: uppercase;
-    font-size: 12px; }
+    padding: 0;
+    border: none; }
+
+p.pitt {
+  font-family: "proxima-nova",sans-serif;
+  text-transform: uppercase;
+  font-size: 12px; }
 
 form ul {
   list-style-type: none;
