@@ -1,0 +1,51 @@
+.mainNav {
+	
+	ul {
+		margin:0;
+		padding:0;
+		list-style-type: none;
+	}
+	
+	li {
+		display: block;
+		background: $white;
+	}
+	
+	a {
+		@extend %fontLegibility;
+		text-decoration: none;
+		border: none;
+		display: block;		
+		font-family: $proxima;
+		text-transform: uppercase;
+		padding: 10px;
+		font-size: 16px;		
+		line-height: 16px;
+		text-align: center;
+		
+		background: none;
+		color: $black;		
+		
+	}
+	
+	
+	@media screen and (min-width: $medium) {
+		
+		ul {
+			text-align: center;
+		}
+		
+		li {
+			display: inline-block;
+		}
+		
+		a {
+			padding: 10px 20px;
+		}
+		
+		
+				
+	}
+	
+	
+}

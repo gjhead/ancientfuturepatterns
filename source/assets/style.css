@@ -60,15 +60,6 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em; }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-td,
-th {
-  padding: 0;
-  vertical-align: top; }
-
 ::-moz-selection {
   background: #d7d7d7;
   color: #000;
@@ -88,7 +79,7 @@ th {
   clear: both; }
 
 h1,
-h1.af, .button, .buttonB {
+h1.af, table th, .mainNav a, .button, .buttonB {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -102,7 +93,7 @@ h1.af, .button, .buttonB {
 .animate-fade:hover {
   opacity: 0; }
 
-.animate-move > .demo-shape, .button, .buttonB {
+.animate-move > .demo-shape, a, .button, .buttonB {
   transition: all 0.5s ease-in-out; }
 
 /* Color Variables */
@@ -147,13 +138,22 @@ dl dt {
 dl dd {
   line-height: 1.2em; }
 
+a {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  text-decoration: none; }
+  a:hover, a:active, a:focus {
+    border-bottom: 1px solid transparent; }
+
 h1,
 h1.af {
   font-family: "proxima-nova",sans-serif;
   font-size: 72px;
   text-transform: uppercase;
   text-align: center;
-  line-height: .85em; }
+  line-height: .85em;
+  margin: 0;
+  padding: 0; }
   @media screen and (min-width: 550px) {
     h1,
     h1.af {
@@ -189,37 +189,89 @@ h6 {
   font-weight: normal;
   text-transform: uppercase; }
 
-.animate-fade {
-  transition: opacity 0.5s ease-out; }
+blockquote {
+  border-left: 5px solid #ffffff;
+  padding: 10px 20px 5px; }
 
-.animate-fade:hover {
-  opacity: 0; }
-
-.animate-move > .demo-shape, .button, .buttonB {
-  transition: all 0.5s ease-in-out; }
-
-h1,
-h1.af, .button, .buttonB {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+  table th {
+    padding: 5px 10px;
+    vertical-align: top;
+    text-align: center;
+    font-weight: normal;
+    font-family: "proxima-nova", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px; }
+  table td {
+    padding: 5px 10px;
+    font-size: 13px;
+    text-align: center; }
 
 .font-secondary {
   font-family: "proxima-nova", sans-serif; }
 
 /* Custom CSS */
 /* Pull in what's needed, create stuff */
-.af {
-  margin: 15px auto;
-  width: 95%; }
+.wrap {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px; }
 
-.headerSite {
+.oneUp .block {
+  width: 100%; }
+
+.twoUp .block {
+  width: 50%;
+  float: left; }
+
+.threeUp .block {
+  width: 33%;
+  float: left; }
+
+.fourUp .block {
+  width: 25%;
+  float: left; }
+
+.afHeader {
   margin: 40px 0; }
-  .headerSite .subhead {
-    font-family: "Courier New", Courier, monospace;
-    text-align: center;
-    font-size: 21px;
-    font-weight: normal;
-    text-transform: uppercase; }
+  .afHeader h1 {
+    margin: 0 0 30px; }
+
+.headIntro {
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 21px;
+  margin: 0 0 30px; }
+
+.mainNav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+.mainNav li {
+  display: block;
+  background: #ffffff; }
+.mainNav a {
+  text-decoration: none;
+  border: none;
+  display: block;
+  font-family: "proxima-nova", sans-serif;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  background: none;
+  color: #000000; }
+@media screen and (min-width: 680px) {
+  .mainNav ul {
+    text-align: center; }
+  .mainNav li {
+    display: inline-block; }
+  .mainNav a {
+    padding: 10px 20px; } }
 
 .footerSite {
   text-align: center; }

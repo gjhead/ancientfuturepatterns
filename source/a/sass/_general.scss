@@ -11,9 +11,8 @@ $gray:				grey;
 // Going Up -->
 // Min Widths
 
-$mid: 		600px;  // Made for fine tuning some mobile styles a bit.
-$medium:  	768px; // min-width
-$large:   	1200px; // min-width
+$medium:  	680px; // min-width
+$large:   	900px; // min-width
 
   
 /* Font Sizes */
@@ -89,10 +88,15 @@ dl {
 
 
 a {
+	color: $white;
+	border-bottom: 1px solid $white;
+	text-decoration: none;
+	@extend %transition;
+	
 	&:hover,
 	&:active,
 	&:focus {
-
+		border-bottom: 1px solid transparent;
 	}
 }
 
@@ -104,6 +108,8 @@ h1.af {
 	text-transform: uppercase;
 	text-align: center;
 	line-height: .85em;
+	margin:0;
+	padding:0;
 	
 	@media screen and (min-width: 550px) { 
 		font-size: 102px;
@@ -148,37 +154,41 @@ h6 {
 
 
 blockquote {
+	
+	border-left: 5px solid $white;
+	padding: 10px 20px 5px;
+	
   
 }
 
-%fade {
-	transition: opacity 0.5s ease-out;
+
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+    
+    
+    th {
+	    padding: 5px 10px;
+	    vertical-align: top;
+	    text-align: center;
+	    font-weight: normal;
+	    font-family: $proxima;
+	    text-transform: uppercase;
+	    @extend %fontLegibility;
+	    font-size: 13px;
+	    
+    }
+    
+    td {
+	    padding: 5px 10px;
+	    font-size: 13px;
+	    text-align: center;	    
+    }
+	
+	
 }
 
-.animate-fade {
-	@extend %fade;
 
-	&:hover {
-		opacity: 0;
-	}
-}
-
-
-%transition {
-	transition: all 0.5s ease-in-out;
-}
-
-.animate-move {
-	> .demo-shape {
-		@extend %transition;
-	}
-}
-
-
-%fontLegibility {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
 
 
 
