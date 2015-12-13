@@ -71,11 +71,11 @@ samp {
   text-shadow: none; }
 
 /* Contain floats: h5bp.com/q */
-.group:before, .group:after {
+.group:before, .story:before, .group:after, .story:after {
   content: "";
   display: table; }
 
-.group:after {
+.group:after, .story:after {
   clear: both; }
 
 h1,
@@ -139,8 +139,8 @@ dl dd {
   line-height: 1.2em; }
 
 a {
-  color: #ffffff;
-  border-bottom: 1px solid #ffffff;
+  color: white;
+  border-bottom: 1px solid white;
   text-decoration: none; }
   a:hover, a:active, a:focus {
     border-bottom: 1px solid transparent; }
@@ -163,34 +163,39 @@ h2 {
   font-family: "Courier New", Courier, monospace;
   font-size: 27px;
   font-weight: normal;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: .5em; }
 
 h3 {
   font-family: "Courier New", Courier, monospace;
   font-size: 21px;
   font-weight: normal;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 0; }
 
 h4 {
   font-family: "Courier New", Courier, monospace;
   font-size: 18px;
   font-weight: normal;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 0; }
 
 h5 {
   font-family: "Courier New", Courier, monospace;
   font-size: 15px;
   font-weight: normal;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 0; }
 
 h6 {
   font-family: "Courier New", Courier, monospace;
   font-size: 13px;
   font-weight: normal;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 0; }
 
 blockquote {
-  border-left: 5px solid #ffffff;
+  border-left: 5px solid white;
   padding: 10px 20px 5px; }
 
 table {
@@ -252,7 +257,7 @@ table {
   list-style-type: none; }
 .mainNav li {
   display: block;
-  background: #ffffff; }
+  background: white; }
 .mainNav a {
   text-decoration: none;
   border: none;
@@ -264,7 +269,7 @@ table {
   line-height: 16px;
   text-align: center;
   background: none;
-  color: #000000; }
+  color: black; }
 @media screen and (min-width: 680px) {
   .mainNav ul {
     text-align: center; }
@@ -272,6 +277,28 @@ table {
     display: inline-block; }
   .mainNav a {
     padding: 10px 20px; } }
+
+.story {
+  margin: 20px auto;
+  padding: 0 0 20px;
+  max-width: 620px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+  @media screen and (min-width: 680px) {
+    .story {
+      max-width: none; } }
+  .story .storyImg {
+    margin: 0 auto;
+    max-width: 500px; }
+    @media screen and (min-width: 680px) {
+      .story .storyImg {
+        max-width: none;
+        float: right;
+        width: 35%; } }
+  @media screen and (min-width: 680px) {
+    .story .storyContent {
+      float: left;
+      width: 65%;
+      padding: 0 30px 0 0; } }
 
 .afFooter {
   text-align: center; }
@@ -342,14 +369,14 @@ select {
   height: 30px;
   margin: 0 0 10px;
   font-family: "Courier New", Courier, monospace;
-  background: #ffffff url(../../../assets/chevron-down.svg) right 5px center no-repeat;
+  background: white url(../../../assets/chevron-down.svg) right 5px center no-repeat;
   background-size: 20px; }
 
 .button {
   font-size: 14px;
   font-family: "proxima-nova", sans-serif;
-  color: #000000;
-  background: #ffffff;
+  color: black;
+  background: white;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
@@ -363,8 +390,8 @@ select {
 .buttonB {
   font-size: 12px;
   font-family: "proxima-nova", sans-serif;
-  color: #000000;
-  background: #ffffff;
+  color: black;
+  background: white;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;

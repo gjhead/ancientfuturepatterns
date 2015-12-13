@@ -1,7 +1,8 @@
 /* Color Variables */
 
-$black: 			#000000;
-$white: 			#ffffff;
+$black: 			rgb(0,0,0);
+$white: 			rgb(255,255,255);
+$off-white:			rgba(255,255,255,.5);
 $gray:				grey;
 
 // GENERAL Breakpoint Variables
@@ -121,6 +122,7 @@ h2 {
 	font-size: 27px;
 	font-weight: normal;
 	text-transform: uppercase;
+	margin-top: .5em;
 }
 
 h3 {
@@ -128,21 +130,23 @@ h3 {
 	font-size: 21px;
 	font-weight: normal;
 	text-transform: uppercase;
+	margin-top:0;
 }
 
 h4 { 
 	font-family: "Courier New", Courier, monospace;
 	font-size: 18px;
 	font-weight: normal;
-	text-transform: uppercase;  
+	text-transform: uppercase; 
+	margin-top:0;
 }
-
 h5 { 
 	
 	font-family: "Courier New", Courier, monospace;
 	font-size: 15px;
 	font-weight: normal;
 	text-transform: uppercase;
+	margin-top:0;
 }
 
 h6 { 	
@@ -150,6 +154,7 @@ h6 {
 	font-size: 13px;
 	font-weight: normal;
 	text-transform: uppercase;
+	margin-top:0;
 }
 
 

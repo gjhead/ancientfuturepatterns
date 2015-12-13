@@ -1,0 +1,31 @@
+.story {
+	@extend .group;
+	margin: 20px auto;
+	padding: 0 0 20px;
+	max-width: 620px;
+	border-bottom: 1px solid $off-white;
+	
+	@media screen and (min-width: $medium) {		
+		max-width: none;					
+	}
+	
+	.storyImg {
+		margin: 0 auto;
+		max-width: 500px;
+		
+		@media screen and (min-width: $medium) {		
+			max-width: none;
+			float: right;
+			width: 35%;					
+		}		
+	}
+	
+	.storyContent {		
+		
+		@media screen and (min-width: $medium) {
+			float: left;
+			width: 65%;
+			padding: 0 30px 0 0;		
+		}		
+	}	
+}
